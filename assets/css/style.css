@@ -13,11 +13,6 @@ body, html{
   margin: 0;
 }
 
-body {
-   background-image: url("/brasov/assets/img/brasov2.jpg");
-   background-repeat: no-repeat;
-   background-position: center;
-}
 
 .navbar {
   font-size: 18px;
