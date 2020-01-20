@@ -57,7 +57,19 @@ body, html{
   display: block;
 }
 
-@media screen and (min-width: 768px) {
+.footer {
+  position: fixed;
+  height: 50px;
+  padding:5px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #fafafa;
+  text-align: center;
+} 
+
+
+@media screen and (min-width: 1022px) {
   .navbar {
     display: flex;
     justify-content: space-between;
