@@ -7,7 +7,7 @@ navBarToggle.addEventListener("click", function() {
 
 
 
-// Geolocation
+/* Geolocation
 
 var x = document.getElementById("trackUser");
 function getLocation() {
@@ -26,6 +26,7 @@ function showPosition(position) {
 document.body.onload = function(){
   getLocation ();
 };
+*/
 
 
 
@@ -60,10 +61,13 @@ var canvas = document.getElementById("myCanvas2");
  
 var ctx=canvas.getContext("2d");
  
-ctx.font="25px Nunito Sans";
+ctx.font="18px Arial";
  
 ctx.fillStyle = "white";
  
 ctx.textAlign = "center";
  
 ctx.fillText("Make your stay a wonderful stay at Brasov!", canvas.width/2, canvas.height/2);
+
+
+
