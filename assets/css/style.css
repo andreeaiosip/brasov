@@ -58,7 +58,7 @@ body, html{
   right: 20px;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 24px;
+  font-size: 12px;
 }
 
 .active {
@@ -68,12 +68,16 @@ body, html{
 .footer {
   position: fixed;
   height: 50px;
+  padding-bottom: 20px;
   left: 0;
   bottom: 0;
   width: 100%;
   color: #fafafa;
   text-align: center;
+  background-color: rgba(97,172,152,1);
 } 
+
+
 
 .grow { 
   transition: all .2s ease-in-out; 
@@ -82,36 +86,11 @@ body, html{
   .grow:hover { 
   transform: scale(1.1); 
   }
-
-  * {box-sizing: border-box;}
   
-.mySlides {display: none;}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
+/*  {box-sizing: border-box;} */
+  
 
 
-
-
-.active {
-  background-color: #717171;
-}
 
 /* Fading animation */
 .fade {
@@ -130,6 +109,34 @@ img {vertical-align: middle;}
   from {opacity: .4} 
   to {opacity: 1}
 }
+
+
+/* CONTACT FORM 
+formLoad {                                         
+  margin-left: 70px; 
+  font-weight: bold ; 
+  float: left; 
+  clear: left; 
+  width: 100px; 
+  text-align: left; 
+  margin-right: 10px; 
+  font-family:sans-serif,bold, Arial, Helvetica; 
+  font-size:14px; 
+} 
+ 
+div {  
+  box-sizing: border-box; 
+  width: 100%; 
+  border: 100px solid black; 
+  float: left; 
+  align-content: center; 
+  align-items: center; 
+} 
+ 
+form {                                         
+  margin: 0 auto; 
+  width: 600px; 
+}*/
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {

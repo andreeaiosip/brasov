@@ -6,58 +6,40 @@ navBarToggle.addEventListener("click", function() {
 });
 
 // Canvas 
-
-// Text canvas
-var canvasText = document.getElementById("myCanvas");
-var ctx = canvasText.getContext("2d");
-
-ctx.fillText("Welcome to Brasov!", 0, 50);
-ctx.font = "50px Arial";
-
-// Gradient responsive
-var context = document.querySelector("canvas").getContext("2d");
-
+var c = document.getElementById("myCanvas2");
+ 
+var ctx = c.getContext("2d");
+ 
+ 
+ 
 // Create gradient
-var grd = context.createLinearGradient(0, 0, 300, 0);
-grd.addColorStop(0, "green");
-grd.addColorStop(1, "grey");
-
-
-
-var render = function() {
-
-  context.canvas.width = document.documentElement.clientWidth * 0.5;
-  context.canvas.height = document.documentElement.clientHeight * 0.5;
-
-  context.fillStyle = grd;
-  context.fillRect(2, 5, context.canvas.width, context.canvas.height);
-
-context.font='15px Arial';
-context.fillText('How are you today?',100,100);
-
-};
-
-window.addEventListener("resize", render);
-
-render();
-
-// Slideshow on Home page
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
+ 
+var grd = ctx.createLinearGradient(0,100,200,0);
+ 
+grd.addColorStop(0,"rgba(97,172,152,1)");
+ 
+grd.addColorStop(1,"rgba(12,194,109,1)");
+ 
+ 
+ 
+// Fill with gradient
+ 
+ctx.fillStyle = grd;
+ 
+ctx.fillRect(0,10,500,100);
+ 
+ 
+ 
+/* Text in canvas */
+ 
+var canvas = document.getElementById("myCanvas2");
+ 
+var ctx=canvas.getContext("2d");
+ 
+ctx.font="25px Nunito Sans";
+ 
+ctx.fillStyle = "white";
+ 
+ctx.textAlign = "center";
+ 
+ctx.fillText("Make your stay a wonderful stay at Brasov!", canvas.width/2, canvas.height/2);
