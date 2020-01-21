@@ -5,6 +5,30 @@ navBarToggle.addEventListener("click", function() {
   mainNav.classList.toggle("active");
 });
 
+
+
+// Geolocation
+
+var x = document.getElementById("trackUser");
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
+
+document.body.onload = function(){
+  getLocation ();
+};
+
+
+
 // Canvas 
 var c = document.getElementById("myCanvas2");
  
