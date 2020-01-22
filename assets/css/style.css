@@ -123,6 +123,40 @@ main {
 
 .heading-section>h2 {
   font-family: 'Cantarell', sans-serif;
+  text-align: center;
+}
+
+
+ /* slideshow  */
+ @keyframes slideshow {
+	10% {left: 0;}
+	30% {left: 0;}
+	30% {left: -100%;}
+	100% {left: -200%;}
+}
+
+
+#slider {
+  overflow:hidden;
+  width:50%;
+  margin:5px auto; 
+  margin-top: 30px;
+  border: 5px solid transparent;
+  border-radius: 10px;
+}
+
+#slider figure img {
+  width:20%;
+  float:left;
+}
+
+#slider figure {
+  position:relative;
+  width:500%;
+  margin:0;
+  left:0;
+  text-align:left;
+  animation:20s slideshow infinite;
 }
 
 /* On smaller screens, decrease text size */
@@ -136,6 +170,15 @@ main {
  }
 
 }
+
+@media screen and (max-width: 767px) {
+
+  #slider {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    }
+  }
 
 @media screen and (min-width: 1022px) {
   .navbar {
