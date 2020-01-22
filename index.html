@@ -39,15 +39,44 @@
   <div class="heading-section">
 <h2>WELCOME TO BRASOV</h2>
 
-<!-- Code for the slider found here https://code.sololearn.com/WySlq83B2MC7/#html-->
- <div id="slider">
-        <figure>
-            <img src="./assets/img/brasov2.jpg" />
-            <img src="./assets/img/brasov17.jpg" />
-            <img src="./assets/img/brasov12.jpg" />
-        </figure>
-    </div>
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="./assets/img/brasov17.jpg" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="./assets/img/brasov60.jpg"  style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="./assets/img/brasov12.jpg"  style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<div class="join-tour">
+    <h3>Join our walking tours in Brasov!</h3>
+    <button class="join-btn">JOIN</button>
+</div></div>
   </main>
 <div class="footer">
   <canvas id="myCanvas2" width="500" height="50"></canvas>
