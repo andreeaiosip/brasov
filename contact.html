@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Brasov City</title>
 </head>
-<body data-rsssl=1>
+<body>
   <nav class="navbar">
     <span class="navbar-toggle" id="js-navbar-toggle">
             <i class="fas fa fa-bars"></i>
@@ -36,26 +36,47 @@
   <!--End Navbar-->
    <main>
 <h2 style="text-align: center"> CONTACT US </h2>  
-
-<h4 style="text-align: center">Contact Form</h4>
-
 <div class="container container-form">
   <form action="/action_page.php">
     <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <input type="text" id="fname" name="firstname" autofocus required placeholder="Your name..">
 
     <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <input type="text" id="lname" name="lastname" required placeholder="Your last name..">
 
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
+    <label for="tel">Phone number</label>
+    <input type="text" id="tel" name="tel" required placeholder="Your phone number">
+
+    <label for="query">Query type:</label>
+
+    <select id="query" name="">
+      <option value="text">Walking Tours</option>
+      <option value="canada">Acommodation</option>
+      <option value="usa">Events</option>
+      <option value="usa">Other</option>
     </select>
+    
+    <div style='text-align:justify'>
+      <p>Arriving date</p>
+      <input type="date" id="start" name="trip-start"
+      value="2020-01-22"
+      min="2020-01-22" max="2020-12-31" style="text-align: center;">
+     <br>
+     <br>
+    <div class="disability" style='text-align:justify'>
+      <p>I have a disability</p>
+      <input type="radio" id="song" name="option" value="create" />
+      <label for="song" class="radio-text">
+          Yes
+          </label> <br>
+      <input type="radio" id="artist" name="option" value="create" checked/>
+      <label for="artist" class="radio-text">
+         No</label><br>
+  <textarea id="subject" name="subject" placeholder="If yes, please tell us how we can help.." style="height:100px"></textarea>
+</div>
 
     <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
 
     <input type="submit" value="Submit">
   </form>
