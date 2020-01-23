@@ -45,7 +45,7 @@
     <input type="text" id="lname" name="lastname" required placeholder="Your last name..">
 
     <label for="tel">Phone number</label>
-    <input type="text" id="tel" name="tel" required placeholder="Your phone number">
+    <input type="tel" id="tel" name="tel" required placeholder="Your phone number">
 
     <label for="query">Query type:</label>
 
@@ -55,7 +55,12 @@
       <option value="usa">Events</option>
       <option value="usa">Other</option>
     </select>
-    
+
+<div class="slidecontainer">
+  <input type="range" min="30" max="100000" value="50" class="slider" id="myRange">
+  <p>Budget: <span>€</span> <span id="mySlider"></span>
+</div>
+
     <div style='text-align:justify'>
       <p>Arriving date</p>
       <input type="date" id="start" name="trip-start"
