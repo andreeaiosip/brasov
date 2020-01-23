@@ -1,97 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Brasov City</title>
-</head>
-<body>
-  <nav class="navbar">
-    <span class="navbar-toggle" id="js-navbar-toggle">
-            <i class="fas fa fa-bars"></i>
-        </span>
-    <a href="#" class="logo grow">BRASOV CITY</a>
-    <ul class="main-nav" id="js-menu">
-      <li>
-        <a href="index.html" class="nav-links"><i class="fa fa-fw fa-lg fa-home" style='margin-right:5px'></i>HOME</a>
-      </li>
-      <li>
-        <a href="history.html" class="nav-links"><i class='fas fa-archway' style='margin-right:5px'></i>HISTORY</a>
-      </li>
-      <li>
-        <a href="attractions.html" class="nav-links"><i class="fas fa-map-marked" style='margin-right:5px'></i>ATTRACTIONS</a>
-      </li>
-      <li>
-        <a href="events.html" class="nav-links"><i class="fas fa-music" style='margin-right:5px'></i>EVENTS</a>
-      </li>
-      <li>
-        <a href="contact.html" class="nav-links"><i class="fa fa-fw fa-envelope" style='margin-right:5px'></i>CONTACT</a>
-      </li>
-    </ul>
-  </nav>
-
-  <!--End Navbar-->
-   <main>
-<h2 style="text-align: center"> CONTACT US </h2>  
-<div class="container container-form">
-  <form action="/action_page.php">
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" autofocus required placeholder="Your name..">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" required placeholder="Your last name..">
-
-    <label for="tel">Phone number</label>
-    <input type="tel" id="tel" name="tel" required placeholder="Your phone number">
-
-    <label for="query">Query type:</label>
-
-    <select id="query" name="">
-      <option value="text">Walking Tours</option>
-      <option value="canada">Acommodation</option>
-      <option value="usa">Events</option>
-      <option value="usa">Other</option>
-    </select>
-
-<div class="slidecontainer">
-  <input type="range" min="30" max="100000" value="50" class="slider" id="myRange">
-  <p>Budget: <span>€</span> <span id="mySlider"></span>
-</div>
-
-    <div style='text-align:justify'>
-      <p>Arriving date</p>
-      <input type="date" id="start" name="trip-start"
-      value="2020-01-22"
-      min="2020-01-22" max="2020-12-31" style="text-align: center;">
-     <br>
-     <br>
-    <div class="disability" style='text-align:justify'>
-      <p>I have a disability</p>
-      <input type="radio" id="song" name="option" value="create" />
-      <label for="song" class="radio-text">
-          Yes
-          </label> <br>
-      <input type="radio" id="artist" name="option" value="create" checked/>
-      <label for="artist" class="radio-text">
-         No</label><br>
-  <textarea id="subject" name="subject" placeholder="If yes, please tell us how we can help.." style="height:100px"></textarea>
-</div>
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
-
-    <input type="submit" value="Submit">
-  </form>
-</div>
-
-  </main>
-<div class="footer">
-  <canvas id="myCanvas2" width="500" height="50"></canvas>
-</div>
-</body>
-<script src='https://kit.fontawesome.com/a076d05399.js'></script>
-<script src="./assets/js/app.js"></script>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="./assets/css/style.css">
+      <title>Brasov City</title>
+   </head>
+   <body>
+      <nav class="navbar">
+         <span class="navbar-toggle" id="js-navbar-toggle">
+         <i class="fas fa fa-bars"></i>
+         </span>
+         <a href="#" class="logo grow">BRASOV CITY</a>
+         <ul class="main-nav" id="js-menu">
+            <li>
+               <a href="index.html" class="nav-links"><i class="fa fa-fw fa-lg fa-home" style='margin-right:5px'></i>HOME</a>
+            </li>
+            <li>
+               <a href="history.html" class="nav-links"><i class='fas fa-archway' style='margin-right:5px'></i>HISTORY</a>
+            </li>
+            <li>
+               <a href="attractions.html" class="nav-links"><i class="fas fa-map-marked" style='margin-right:5px'></i>ATTRACTIONS</a>
+            </li>
+            <li>
+               <a href="events.html" class="nav-links"><i class="fas fa-music" style='margin-right:5px'></i>EVENTS</a>
+            </li>
+            <li>
+               <a href="contact.html" class="nav-links"><i class="fa fa-fw fa-envelope" style='margin-right:5px'></i>CONTACT</a>
+            </li>
+         </ul>
+      </nav>
+      <!--End Navbar-->
+      <main>
+         <h2 style="text-align: center"> CONTACT US </h2>
+         <div class="container container-form">
+         <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" autofocus required placeholder="Your name..">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" required placeholder="Your last name..">
+            
+            <div>
+               <label for="telephone">Phone number</label>
+               <input type="tel" required placeholder="Your phone number">
+            </div>
+            <br>
+            <div class="contact-type">
+              <p>Do you wish to be contacted by:</p>
+            
+            <input type="checkbox" id="contact" name="option" value="create" checked/>
+                <label for="phone">Phone</label>
+                <input type="checkbox" id="email-address" name="option" value="create" />
+                <label for="email-add">Email</label>
+              </div>
+            <br>
+            <label for="query">Query type:</label>
+            <select id="query" name="">
+               <option value="text">Walking Tours</option>
+               <option value="canada">Acommodation</option>
+               <option value="usa">Events</option>
+               <option value="usa">Other</option>
+            </select>
+            <div class="slidecontainer">
+               <input type="range" min="30" max="100000" value="50" class="slider" id="myRange">
+               <p>Budget: <span>€</span> <span id="mySlider"></span>
+            </div>
+            <br>
+            <div class="people">
+              <label for="people">How many people are traveling?</label>
+              <input type="number" required>
+           </div>
+           <br>
+            <div style='text-align:justify'>
+               <p>Arriving date</p>
+               <input type="date" id="start" name="trip-start"
+                  value="2020-01-22"
+                  min="2020-01-22" max="2020-12-31" style="text-align: center;">
+               <br>
+               <br>
+               <div class="disability" style='text-align:justify'>
+                  <p>I have a disability</p>
+                  <input type="radio" id="song" name="option" value="create" />
+                  <label for="song" class="radio-text">
+                  Yes
+                  </label> <br>
+                  <input type="radio" id="artist" name="option" value="create" checked/>
+                  <label for="artist" class="radio-text">
+                  No</label><br>
+                  <textarea id="subject" name="subject" placeholder="If yes, please tell us how we can help.." style="height:100px"></textarea>
+               </div>
+               <label for="subject">Subject</label>
+               <textarea id="subject" name="subject" required placeholder="Write something.." style="height:150px"></textarea>
+               <input type="submit" value="Submit">
+         </form>
+         </div>
+      </main>
+      <div class="footer">
+         <canvas id="myCanvas2" width="500" height="50"></canvas>
+      </div>
+   </body>
+   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+   <script src="./assets/js/app.js"></script>
 </html>
