@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Cantarell|Nunito+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC|Libre+Baskerville|Merriweather|Nunito+Sans|Pridi|Righteous&display=swap');
 body, html{
-    font-family: 'Nunito Sans', sans-serif;
+    font-family:'Nunito Sans', sans-serif;
     margin: 0;
     padding: 0;
     min-height:100%;
@@ -17,7 +16,7 @@ body:before {
   content: "";
   display: block;
   position: fixed;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   left: 0;
   top: 0;
   width: 100%;
@@ -63,13 +62,16 @@ h2, h4 {
 }
 
 .main-nav li {
+  font-family: 'Nunito Sans', sans-serif;
   text-align: center;
   margin: 15px auto;
 }
 
 .logo {
   display: inline-block;
-  font-size: 18px;
+  font-family: 'Righteous', cursive;
+  letter-spacing: 2px;
+  font-size: 20px;
   font-weight: 600;
   margin-top: 10px;
   margin-left: 20px;
@@ -118,21 +120,30 @@ h2, h4 {
 }
 
 .heading-section>h2 {
-  font-family: 'Cantarell', sans-serif;
+  font-family:'Righteous', cursive;
+  color: #3b4f3f;
 }
 
-/* video */
+/* video ---------------*/
+
+.history-container>h2 {
+ font-family:'Righteous', cursive;
+ color: #3b4f3f;
+}
 
 .brasov-video {
   display: flex;
   text-align: center;
   padding-top:30px;
+  padding-bottom:30px;
 }
 
 video {
   width: 60vw;
   margin: auto;
 }
+
+
 /* Main content CONTACT Page */
 
 .container-form {
