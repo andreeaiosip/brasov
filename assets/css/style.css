@@ -124,7 +124,14 @@ h2, h4 {
 /* video */
 
 .brasov-video {
+  display: flex;
   text-align: center;
+  padding-top:30px;
+}
+
+video {
+  width: 60vw;
+  margin: auto;
 }
 /* Main content CONTACT Page */
 
@@ -264,6 +271,10 @@ input[type=submit]:hover {
   .container-form {
     width: 60vw;
     min-height: auto;
+  }
+
+  .container {
+    padding: 60px;
   }
 }
 
