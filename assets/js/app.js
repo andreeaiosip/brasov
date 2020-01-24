@@ -54,7 +54,7 @@ slider.oninput = function() {
 }
 
 
-// Slider range
+// Slider range budget on contact page
 
 var slider = document.getElementById("myRange");
 var output = document.getElementById("mySlider");
@@ -79,7 +79,5 @@ function getLocation() {
         });
     }
 };
-
-
 
 getLocation();
