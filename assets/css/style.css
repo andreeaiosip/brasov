@@ -237,15 +237,15 @@ figure:hover:after {
 }
 
 .photo01 {
-	background-image: url("https://www.nicerightnow.com/wp-content/uploads/2018/10/Brasov-Romania-Tour-100-roadside.jpg");
+	background-image: url("https://www.zilesinopti.ro/media/1244319180570b72fc288858.47397812.jpg");
 }
 
 .photo02 {
-	background-image: url("https://www.nicerightnow.com/wp-content/uploads/2018/10/Brasov-Romania-Tour-100-Catherines-Gate.jpg");
+	background-image: url("https://www.zilesinopti.ro/media/uploads//republicii%20veche.jpg");
 }
 
 .photo03 {
-	background-image: url("https://c4.wallpaperflare.com/wallpaper/651/842/390/brasov-romania-snow-city-wallpaper-preview.jpg");
+	background-image: url("https://i.redd.it/gji8rffm2gq01.jpg");
 }
 
 .photo04 {
@@ -258,6 +258,30 @@ figure:hover:after {
 
 .photo06 {
 	background-image: url("http://static.trip101.com/paragraph_media/pictures/001/755/149/large/Biserica_Neagra_2C_Brasov_2C_Romania.jpg?1575969854");
+}
+
+.photo07 {
+	background-image: url("https://www.hotelambient.ro/wp-content/uploads/2016/12/Poiana-Brasov-1024x577.jpg");
+}
+
+.photo08 {
+	background-image: url("https://lp-cms-production.imgix.net/features/2016/03/Poiana-Brasov-Transylvania-ski-resort_CS.jpg?auto=format&fit=crop&q=40&sharp=10&vib=20&ixlib=react-8.6.4");
+}
+
+.photo09 {
+	background-image: url("https://c4.wallpaperflare.com/wallpaper/651/842/390/brasov-romania-snow-city-wallpaper-preview.jpg");
+}
+
+.photo10 {
+	background-image: url("https://cdn.ostrovok.ru/t/640x400/content/d6/e6/d6e6cf72e3b791bf6d7838ec0bbbbef4aedd6c66.jpeg");
+}
+
+.photo11 {
+	background-image: url("https://www.nicerightnow.com/wp-content/uploads/2018/10/Brasov-Romania-Tour-100-Catherines-Gate.jpg");
+}
+
+.photo12 {
+	background-image: url("https://www.nicerightnow.com/wp-content/uploads/2018/10/Brasov-Romania-Tour-100-roadside.jpg");
 }
 /* lightbox */
 
