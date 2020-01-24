@@ -156,7 +156,7 @@ HISTORY Page
 
 /* video ---------------*/
 
-.history-container>h2 {
+.history-container>h2, .main-contact>h2, .main-attractions>h2, .main-events>h2 {
  font-family:'Righteous', cursive;
  color: #3b4f3f;
 }
