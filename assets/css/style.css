@@ -173,6 +173,170 @@ video {
   margin: auto;
 }
 
+/* Gallery */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, .row {
+    text-align: center;
+}
+
+.row figure {
+    height: 240px;
+    width: 240px;
+    margin:0;
+    background-size: cover;
+	background-position: 50% 50%;
+    box-shadow:0 0 15px rgba(0, 0, 0, 0.7);
+    transition: all 1s ease-in-out;
+    background-repeat:no-repeat;
+    z-index:2;
+    display:inline-block;
+    position:relative;
+
+}
+
+.row a {
+    display: inline-block;
+    text-align: center;
+    margin:40px;
+    text-decoration:none;
+    color:white;
+}
+
+.row a p {
+    position:absolute;
+    opacity: 0;
+    font-size: 20px;
+    top:45%;
+    z-index:100;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+figure:hover p {
+    opacity:1;
+}
+
+figure:after {
+    content:"";
+    display:inline-block;
+    height:100%;
+    width:100%;
+    background-color:#DA291C;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity:0;
+    transition: all 0.4s ease-in-out 0s;
+    z-index:99;
+}
+
+figure:hover:after {
+    opacity:0.7;
+}
+
+.photo01 {
+	background-image: url("https://www.nicerightnow.com/wp-content/uploads/2018/10/Brasov-Romania-Tour-100-roadside.jpg");
+}
+
+.photo02 {
+	background-image: url("https://www.nicerightnow.com/wp-content/uploads/2018/10/Brasov-Romania-Tour-100-Catherines-Gate.jpg");
+}
+
+.photo03 {
+	background-image: url("https://c4.wallpaperflare.com/wallpaper/651/842/390/brasov-romania-snow-city-wallpaper-preview.jpg");
+}
+
+
+/* lightbox */
+
+.lightbox-target {
+  position: fixed;
+  top: -100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+  overflow: hidden;
+  z-index:300;
+}
+
+.lightbox-target .container-photos {
+  margin: auto;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  background-color: white;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  text-align:left;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+h3 {
+    text-align: center;
+}
+
+.container-photos .elements {
+    display:inline-block;
+    width: 40%;
+    max-height: 425px;
+
+}
+
+ul {
+    list-style-image: url('https://insider.ivanti.com/resources/statics/13067/Ivanti_rgb.png?a=1527884897521');
+    overflow: hidden;
+    overflow-y:auto;
+    max-height: 369px;
+    margin:0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a.lightbox-close {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: white;
+  color: black;
+  text-decoration: none;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.lightbox-target:target {
+  opacity: 1;
+  top: 0;
+  bottom: 0;
+}
+
+.lightbox-target:target img {
+    height: 400px;
+    vertical-align: top;
+}
+
 /* 
 =============================== 
 CONTACT Page
