@@ -66,18 +66,18 @@ slider.oninput = function() {
 
 // Geolocation
 
-var x = document.getElementById("myLocation");
+// var x = document.getElementById("myLocation");
 
-var position = null;
+// var position = null;
 
-function getLocation() {
-    if (navigator.geolocation && !position) {
-        navigator.geolocation.watchPosition(function(currentPosition) {
-            position = currentPosition;
-        }, function(error) {
-            alert(error)
-        });
-    }
-};
+// function getLocation() {
+//     if (navigator.geolocation && !position) {
+//         navigator.geolocation.watchPosition(function(currentPosition) {
+//             position = currentPosition;
+//         }, function(error) {
+//             alert(error)
+//         });
+//     }
+// };
 
-getLocation();
+// getLocation();
