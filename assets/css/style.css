@@ -323,7 +323,7 @@ figure:hover:after {
 
 }
 
-/* ul {
+ul {
    
     overflow: hidden;
     overflow-y:auto;
@@ -333,7 +333,7 @@ figure:hover:after {
 
 li {
     margin-bottom: 10px;
-} */
+}
 
 a.lightbox-close {
   display: block;
@@ -520,8 +520,13 @@ input[type=submit]:hover {
     min-height: auto;
   }
 
-  /* .container {
+  .container {
     padding: 60px;
-  } */
+  }
+
+  .lightbox-target:target img {
+    height: auto;
+    width: 60vw;
+  }
 }
 
