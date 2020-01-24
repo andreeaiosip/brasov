@@ -26,6 +26,12 @@ body:before {
   background-size: cover;
 }
 
+
+/* 
+=============================== 
+General styling
+=============================== 
+*/
 main {
   flex: 1;
   margin-top: 30px;
@@ -41,6 +47,12 @@ main {
 h2, h4 {
   text-align: center;
 }
+
+/* 
+=============================== 
+Navbar 
+=============================== 
+*/
 .navbar {
   font-size: 18px;
   background: rgb(97,172,152);
@@ -77,6 +89,7 @@ h2, h4 {
   margin-left: 20px;
 }
 
+
 .grow { 
   transition: all .2s ease-in-out; 
   }
@@ -98,6 +111,13 @@ h2, h4 {
   display: block;
 }
 
+
+/* 
+=============================== 
+Footer 
+=============================== 
+*/
+
 .footer {
   position: fixed;
   height: 40px;
@@ -111,8 +131,11 @@ h2, h4 {
 } 
 
 
-/* Main content INDEX */
-
+/* 
+=============================== 
+HOME Page 
+=============================== 
+*/
 
 .heading-section {
   margin: auto;
@@ -123,6 +146,13 @@ h2, h4 {
   font-family:'Righteous', cursive;
   color: #3b4f3f;
 }
+
+
+/* 
+=============================== 
+HISTORY Page
+=============================== 
+*/
 
 /* video ---------------*/
 
@@ -143,15 +173,32 @@ video {
   margin: auto;
 }
 
+/* 
+=============================== 
+CONTACT Page
+=============================== 
+*/
 
-/* Main content CONTACT Page */
+.main-contact {
+  margin-bottom: 15px;
+}
+.address-business {
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.address-business>h3 {
+  padding-bottom: 50px;
+}
+/* Form */
 
 .container-form {
   text-align: center;
   width: 80vw;
   min-height: 80vh;
   margin: auto;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
 }
 
 input[type=text], input[type=tel], select, textarea {
@@ -192,43 +239,7 @@ input[type=submit]:hover {
   margin-top: 30px;
 }
 
-.slidecontainer {
-  width: 100%;
-}
 
-.slider {
-  -webkit-appearance: none;
-  width: 100%;
-  height: 15px;
-  border-radius: 5px;
-  background: #d3d3d3;
-  outline: none;
-  opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
-}
-
-.slider:hover {
-  opacity: 1;
-}
-
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #4CAF50;
-  cursor: pointer;
-}
-
-.slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #4CAF50;
-  cursor: pointer;
-}
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 495px) {

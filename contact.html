@@ -33,7 +33,9 @@
          </ul>
       </nav>
       <!--End Navbar-->
-      <main>
+ 
+  
+      <main class="main-contact">
          <h2 style="text-align: center"> CONTACT US </h2>
          <div class="container container-form">
          <form action="/action_page.php">
@@ -41,20 +43,18 @@
             <input type="text" id="fname" name="firstname" autofocus required placeholder="Your name..">
             <label for="lname">Last Name</label>
             <input type="text" id="lname" name="lastname" required placeholder="Your last name..">
-            
             <div>
                <label for="telephone">Phone number</label>
                <input type="tel" required placeholder="Your phone number">
             </div>
             <br>
             <div class="contact-type">
-              <p>Do you wish to be contacted by:</p>
-            
-            <input type="checkbox" id="contact" name="option" value="create" checked/>
-                <label for="phone">Phone</label>
-                <input type="checkbox" id="email-address" name="option" value="create" />
-                <label for="email-add">Email</label>
-              </div>
+               <p>Do you wish to be contacted by:</p>
+               <input type="checkbox" id="contact" name="option" value="create" checked/>
+               <label for="phone">Phone</label>
+               <input type="checkbox" id="email-address" name="option" value="create" />
+               <label for="email-add">Email</label>
+            </div>
             <br>
             <label for="query">Query type:</label>
             <select id="query" name="">
@@ -64,15 +64,15 @@
                <option value="usa">Other</option>
             </select>
             <div class="slidecontainer">
-               <input type="range" min="30" max="100000" value="50" class="slider" id="myRange">
+               <input type="range" min="30" max="10000" value="50" class="slider" id="myRange">
                <p>Budget: <span>€</span> <span id="mySlider"></span>
             </div>
             <br>
             <div class="people">
-              <label for="people">How many people are traveling?</label>
-              <input type="number" required>
-           </div>
-           <br>
+               <label for="people">How many people are traveling?</label>
+               <input type="number" required>
+            </div>
+            <br>
             <div style='text-align:justify'>
                <p>Arriving date</p>
                <input type="date" id="start" name="trip-start"
@@ -100,7 +100,19 @@
                <input type="submit" value="Submit">
          </form>
          </div>
-      </main>
+       
+       <!-- </div> -->
+      </main>  
+      <div class="address-business">
+          <h3><strong>Brasov City Tours</strong>
+             <br>St. Tampei no.3
+             <br> Brasov
+             <br> Romania
+             <br>
+             <br><strong>email:</strong> <a href="mailto:hello@brasovcity.ro?subject=Enquiry&">hello@brasovcity.ro</a>
+             <br><strong>tel:</strong> 0044 423546879
+          </h3>
+       </div>
       <div class="footer">
          <canvas id="myCanvas2" width="500" height="50"></canvas>
       </div>
