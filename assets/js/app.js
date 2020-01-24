@@ -6,30 +6,6 @@ navBarToggle.addEventListener("click", function() {
 });
 
 
-
-/* Geolocation
-
-var x = document.getElementById("trackUser");
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else {
-    x.innerHTML = "Geolocation is not supported by this browser.";
-  }
-}
-
-function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude +
-  "<br>Longitude: " + position.coords.longitude;
-}
-
-document.body.onload = function(){
-  getLocation ();
-};
-*/
-
-
-
 // Canvas 
 var c = document.getElementById("myCanvas2");
  
@@ -88,4 +64,22 @@ slider.oninput = function() {
   output.innerHTML = this.value;
 }
 
+// Geolocation
 
+var x = document.getElementById("myLocation");
+
+var position = null;
+
+function getLocation() {
+    if (navigator.geolocation && !position) {
+        navigator.geolocation.watchPosition(function(currentPosition) {
+            position = currentPosition;
+        }, function(error) {
+            alert(error)
+        });
+    }
+};
+
+
+
+getLocation();
