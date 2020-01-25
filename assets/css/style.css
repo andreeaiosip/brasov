@@ -228,54 +228,35 @@ HOME Page
 .join-tour>h3 {
   font-family: 'Righteous', cursive;
   color: #3b4f3f;
+  margin-bottom:10px;
 }
 
 .join-btn {
--moz-box-shadow: 0px 0px 0px 0px #e3fff8;
-	-webkit-box-shadow: 0px 0px 0px 0px #e3fff8;
-	box-shadow: 0px 0px 0px 0px #e3fff8;
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #31c2aa), color-stop(1, #1b704c) );
-	background:-moz-linear-gradient( center top, #31c2aa 5%, #1b704c 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#31c2aa', endColorstr='#1b704c');
-	background-color:#31c2aa;
-	-webkit-border-top-left-radius:15px;
-	-moz-border-radius-topleft:15px;
-	border-top-left-radius:15px;
-	-webkit-border-top-right-radius:15px;
-	-moz-border-radius-topright:15px;
-	border-top-right-radius:15px;
-	-webkit-border-bottom-right-radius:15px;
-	-moz-border-radius-bottomright:15px;
-	border-bottom-right-radius:15px;
-	-webkit-border-bottom-left-radius:15px;
-	-moz-border-radius-bottomleft:15px;
-  border-bottom-left-radius:15px;
-  margin: 10px;
-	text-indent:-2.14px;
-	border:1px solid #acf2db;
+	background-color:#44c767;
+	border-radius:26px;
+	border:1px solid #18ab29;
 	display:inline-block;
+	cursor:pointer;
 	color:#ffffff;
-	font-family:Arial Black;
-	font-size:16px;
+	font-family:"Nunito Sans";
+	font-size: 16px;
 	font-weight:bold;
-	font-style:normal;
-	height:40px;
-	width:90px;
+	padding:7px 17px;
 	text-decoration:none;
-	text-align:center;
-	text-shadow:0px 0px 0px #caeded;
+	text-shadow:0px 1px 0px #2f6627;
 }
-
 .join-btn:hover {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #1b704c), color-stop(1, #31c2aa) );
-	background:-moz-linear-gradient( center top, #1b704c 5%, #31c2aa 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1b704c', endColorstr='#31c2aa');
-	background-color:#1b704c;
-}.join-btn:active {
+	background-color:#5cbf2a;
+}
+.join-btn:active {
 	position:relative;
 	top:1px;
 }
-/* This button was generated using CSSButtonGenerator.com */
+
+
+        
+
+     
 
 /* 
 =============================== 
