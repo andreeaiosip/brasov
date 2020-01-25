@@ -486,6 +486,7 @@ table {
   caption-side: bottom;
   border-collapse: collapse;
   margin: auto;
+  font-family:'Nunito Sans', sans-serif;
 }
  
 .myEvents {
