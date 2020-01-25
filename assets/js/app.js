@@ -81,3 +81,6 @@ slider.oninput = function() {
 // };
 
 // getLocation();
+
+
+// Validate number 
