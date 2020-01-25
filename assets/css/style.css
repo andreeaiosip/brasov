@@ -472,9 +472,15 @@ input[type=submit]:hover {
 table {
   /* Displayed at the top by default */
   caption-side: bottom;
+  border-collapse: collapse;
+  margin: auto;
 }
  
-.eventsDaily {
+.myEvents {
+  overflow-x:auto;
+}
+
+.main-events {
   width: 80vw;
   margin:auto;
  
