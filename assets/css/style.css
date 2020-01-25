@@ -467,7 +467,11 @@ input[type=submit]:hover {
 }
 
 
-/* EVENTS Page */
+/* 
+=============================== 
+EVENTS Page
+=============================== 
+*/
 
 table {
   /* Displayed at the top by default */
@@ -502,6 +506,7 @@ table {
 .eventsDaily td {
   text-align: center;
   padding: 0.3em;
+  font-weight: bold;
 }
  
 /* Style table headings */
@@ -522,6 +527,41 @@ table {
   background-color: rgb(50, 59, 53);
   color: #FFF;
 }
+
+
+/* BUTTON */
+.myButton {
+	box-shadow: 0px 10px 14px -7px #3e7327;
+	background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+	background-color:#77b55a;
+	border-radius:4px;
+	border:1px solid #4b8f29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:'Nunito Sans', sans-serif;
+	
+	font-weight:bold;
+	padding:4px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5b8a3c;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #72b352 5%, #77b55a 100%);
+	background-color:#72b352;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+/* 
+=============================== 
+MEDIA QUERIES
+=============================== 
+*/
+
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 495px) {
  #myCanvas2 {
