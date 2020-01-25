@@ -408,6 +408,8 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
 }
 
 .people {
