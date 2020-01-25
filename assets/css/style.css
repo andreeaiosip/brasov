@@ -508,18 +508,18 @@ table {
 .eventsDaily th {
   font-weight: bold;
   padding: 0.3em;
-  background-color: #00308F;
+  background-color: #008f7f;
   color: #FFF;
 }
  
 /* Alternate colors on table rows */
 .eventsDaily tr:nth-child(odd){
-  background-color: #7CB9E8;
+  background-color:#95c1c2;
 }
  
 /* Highlight table row on hover */
 .eventsDaily tr:hover {
-  background-color: #2E5894;
+  background-color: rgb(50, 59, 53);
   color: #FFF;
 }
 /* On smaller screens, decrease text size */
