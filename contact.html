@@ -36,9 +36,9 @@
       <main class="main-contact">
          <h2 style="text-align: center"> CONTACT US </h2>
          <div class="container container-form">
-         <form action="/action_page.php">
+         <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
             <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" autofocus required placeholder="Your name..">
+            <input type="text" name="fname" id="firstname" autofocus required placeholder="Your first name..">
             <label for="lname">Last Name</label>
             <input type="text" id="lname" name="lastname" required placeholder="Your last name..">
             <div>
@@ -77,19 +77,19 @@
             <br>
             <div style='text-align:justify'>
                <p>Arriving date</p>
-               <input type="date" id="start" name="trip-start"
+               <input type="date" id="inputDate" name="trip-start"
                   value="2020-01-22"
-                  min="2020-01-22" max="2020-12-31" style="text-align: center;">
+                  min="2020-01-22" style="text-align: center;">
                <br>
                <br>
                <div class="disability" style='text-align:justify'>
                   <p>I have a disability</p>
-                  <input type="radio" id="song" name="option" value="create" />
-                  <label for="song" class="radio-text">
+                  <input type="radio"  name="option" value="create" />
+                  <label class="radio-text">
                   Yes
                   </label> <br>
-                  <input type="radio" id="artist" name="option" value="create" checked/>
-                  <label for="artist" class="radio-text">
+                  <input type="radio"  name="option" value="create" checked/>
+                  <label  class="radio-text">
                   No</label><br>
                   <textarea id="subject" name="subject" placeholder="If yes, please tell us how we can help.." style="height:100px"></textarea>
                </div>
@@ -99,7 +99,7 @@
                <br>
                <label for="subject">Message</label>
                <textarea id="subject" name="subject" required placeholder="How can we help you?" style="height:150px"></textarea>
-               <input type="submit" id='validate' value="Submit">
+               <input type="submit" value="Submit">
          </form>
          </div>
          <!-- </div> -->

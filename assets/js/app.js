@@ -82,3 +82,20 @@ slider.oninput = function() {
 
 // getLocation();
 
+// Date validation for the contact form
+var EnteredDate = document.getElementById("tinputDate").value; 
+
+var EnteredDate = $("#inputDate").val(); 
+
+var date = EnteredDate.substring(0, 2);
+var month = EnteredDate.substring(3, 5);
+var year = EnteredDate.substring(6, 10);
+
+var myDate = new Date(year, month - 1, date);
+
+var today = new Date();
+
+if (myDate > today) {
+ 
+    alert("Entered date is less than today's date ");
+}
