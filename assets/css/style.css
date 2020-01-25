@@ -478,6 +478,8 @@ table {
  
 .myEvents {
   overflow-x:auto;
+  padding-left:5px;
+  padding-right: 5px;
 }
 
 .main-events {
@@ -529,6 +531,9 @@ table {
  footer {
    height: 25px;
  }
+ table {
+  font-size: 8px;
+}
 
 }
 
@@ -539,6 +544,8 @@ table {
     width: 60vw;
    
   }
+
+  
  }
 
 @media screen and (min-width: 1022px) {
