@@ -466,6 +466,54 @@ input[type=submit]:hover {
   cursor: pointer;
 }
 
+
+/* EVENTS Page */
+
+table {
+  /* Displayed at the top by default */
+  caption-side: bottom;
+}
+ 
+.eventsDaily {
+  width: 80vw;
+  margin:auto;
+ 
+  /* Add border around the table */
+  border: 1px solid #000;
+ 
+  /* Eliminate space between cells */
+  border-collapse: collapse;
+}
+ 
+/* Add border around cells */
+.eventsDaily td, .eventsDaily th {
+  border: 1px solid #000;
+}
+ 
+/* Style table columns */
+.eventsDaily td {
+  text-align: center;
+  padding: 0.3em;
+}
+ 
+/* Style table headings */
+.eventsDaily th {
+  font-weight: bold;
+  padding: 0.3em;
+  background-color: #00308F;
+  color: #FFF;
+}
+ 
+/* Alternate colors on table rows */
+.eventsDaily tr:nth-child(odd){
+  background-color: #7CB9E8;
+}
+ 
+/* Highlight table row on hover */
+.eventsDaily tr:hover {
+  background-color: #2E5894;
+  color: #FFF;
+}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 495px) {
  #myCanvas2 {

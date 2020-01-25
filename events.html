@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Brasov City</title>
 </head>
-<body>
+<body class="body-events">
   <nav class="navbar">
     <span class="navbar-toggle" id="js-navbar-toggle">
             <i class="fas fa fa-bars"></i>
@@ -35,6 +35,88 @@
    <!--End Navbar-->
    <main class="main-events">
 <h2 >WHAT'S ON IN BRASOV</h2>
+<div class="myTable">
+<table class="eventsDaily">
+  <!-- caption can be used to define a table title -->
+    <!-- <caption>Events in Brasov</caption> -->
+    <!-- thead shows at the top of the table and must
+    come before tbody -->
+    <thead>
+      <tr>
+        <td colspan="5">Daily Tours</td>
+      </tr>
+    </thead>
+    <tfoot>
+      <!-- You can define how many rows are taken up
+      with colspan and you can take up multiple rows
+      with rowspan -->
+      <tr><td colspan="5">* Please be on time</td></tr>
+    </tfoot>
+    <!-- The main data for the table goes between tbody -->
+    <tbody>
+    <tr>
+      <th></th>
+
+      <!-- scope defines whether a heading is tied to a
+      column or row -->
+      <th scope="col">Event</th>
+      <th scope="col">Leave at</th>
+      <th scope="col">Return at</th>
+      <th scope="col">Price</th>
+    </tr>
+    <tr>
+      <th scope="row">Central Park</th>
+      <td>Event 1</td>
+      <td>Event 2</td>
+      <td>Event 3</td>
+      <td>Event 4</td>
+    </tr>
+    <tr>
+      <th scope="row">Central Park</th>
+      <td>Event 1</td>
+      <td>Event 2</td>
+      <td>Event 3</td>
+      <td>Event 4</td>
+    </tr>
+    <tr>
+      <th scope="row">Central Park</th>
+      <td>Event 1</td>
+      <td>Event 2</td>
+      <td>Event 3</td>
+      <td>Event 4</td>
+    </tr>
+    <tr>
+      <th scope="row">Central Park</th>
+      <td>Event 1</td>
+      <td>Event 2</td>
+      <td>Event 3</td>
+      <td>Event 4</td>
+    </tr>
+    <tr>
+      <th scope="row">Central Park</th>
+      <td>Event 1</td>
+      <td>Event 2</td>
+      <td>Event 3</td>
+      <td>Event 4</td>
+    </tr>
+    <tr>
+      <th scope="row">Central Park</th>
+      <td>Event 1</td>
+      <td>Event 2</td>
+      <td>Event 3</td>
+      <td>Event 4</td>
+    </tr>
+    <tr>
+      <th scope="row">Central Park</th>
+      <td>Event 1</td>
+      <td>Event 2</td>
+      <td>Event 3</td>
+      <td>Event 4</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+  <br>
 
   </main>
 <div class="footer">
