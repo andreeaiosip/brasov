@@ -33,8 +33,6 @@
          </ul>
       </nav>
       <!--End Navbar-->
- 
-  
       <main class="main-contact">
          <h2 style="text-align: center"> CONTACT US </h2>
          <div class="container container-form">
@@ -47,13 +45,17 @@
                <label for="telephone">Phone number</label>
                <input type="tel" required placeholder="Your phone number">
             </div>
+            <div>
+               <label for="email">Email address</label>
+               <input type="email" id="email" required placeholder="Your email address">
+            </div>
             <br>
             <div class="contact-type">
                <p>Do you wish to be contacted by:</p>
                <input type="checkbox" id="contact" name="option" value="create" checked/>
                <label for="phone">Phone</label>
-               <input type="checkbox" id="email-address" name="option" value="create" />
-               <label for="email-add">Email</label>
+               <input type="checkbox" name="option" value="create" />
+               <label for="email">Email</label>
             </div>
             <br>
             <label for="query">Query type:</label>
@@ -70,7 +72,7 @@
             <br>
             <div class="people">
                <label for="people">How many people are traveling?</label>
-               <input type="number" required>
+               <input type="number" min="1" step="1" required>
             </div>
             <br>
             <div style='text-align:justify'>
@@ -97,26 +99,26 @@
                <br>
                <label for="subject">Message</label>
                <textarea id="subject" name="subject" required placeholder="How can we help you?" style="height:150px"></textarea>
-               <input type="submit" value="Submit">
+               <input type="submit" id='validate' value="Submit">
          </form>
          </div>
-       
-       <!-- </div> -->
-      </main>  
+         <!-- </div> -->
+      </main>
       <div class="address-business">
-          <h3><strong>Brasov City Tours</strong>
-             <br>St. Tampei no.3
-             <br> Brasov
-             <br> Romania
-             <br>
-             <br><strong>email:</strong> <a href="mailto:hello@brasovcity.ro?subject=Enquiry&">hello@brasovcity.ro</a>
-             <br><strong>tel:</strong> 0044 423546879
-          </h3>
-       </div>
+         <h3><strong>Brasov City Tours</strong>
+            <br>St. Tampei no.3
+            <br> Brasov
+            <br> Romania
+            <br>
+            <br><strong>email:</strong> <a href="mailto:hello@brasovcity.ro?subject=Enquiry&">hello@brasovcity.ro</a>
+            <br><strong>tel:</strong> 0044 423546879
+         </h3>
+      </div>
       <div class="footer">
          <canvas id="myCanvas2" width="500" height="50"></canvas>
       </div>
    </body>
    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
    <script src="./assets/js/app.js"></script>
 </html>

@@ -138,6 +138,7 @@ HOME Page
 =============================== 
 */
 
+
 .heading-section {
   margin: auto;
   padding: 20px;
@@ -389,7 +390,7 @@ CONTACT Page
   padding-bottom: 15px;
 }
 
-input[type=text], input[type=tel], select, textarea {
+input[type=text], input[type=tel], select, textarea, input[type=email] {
   width: 100%;
   padding: 13px;
   border: 1px solid #ccc;
