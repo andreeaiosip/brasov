@@ -138,6 +138,40 @@ HOME Page
 =============================== 
 */
 
+.sli {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  animation: animate infinite 10s;
+  font-size:4em;
+  color: #fff;
+  
+}
+
+.slide-1 {
+    background: tomato  url("https://spunehellovacantelortale.ro/wp-content/uploads/2016/08/Brasov-Panorama-01.jpg") center center/cover;
+    
+  }
+
+.slide-2 {
+  background: green  url('https://www.google.com/search?biw=1536&bih=722&tbs=isz%3Al&tbm=isch&sxsrf=ACYBGNTaS4t_2mAHN_0dr7KEABVvsIa5jA%3A1579978252986&sa=1&ei=DI4sXpzsO4mW8gKUgr6YDg&q=brasov+poze+tampa&oq=brasov+poze+tampa&gs_l=img.3..0i8i30.35797.37935..38175...1.0..0.109.886.9j1......0....1..gws-wiz-img.......35i39j0j0i30j0i5i30.W-AtwS7397I&ved=0ahUKEwicopbUtZ_nAhUJi1wKHRSBD-MQ4dUDCAc&uact=5#imgrc=ow5VT1I3zOFplM:') center center/cover;
+  animation-delay:5s;
+}
+
+.slide-3 {
+  background: green  url('https://cdn.cluj.com/ghidlocalcom/sites/6/2017/07/slicktraveler.jpg') center center/cover;
+  animation-delay:5s;
+}
+
+@keyframes animate {
+  0% {opacity: 0; }
+  20% {opacity: 0; z-index: 3;}
+  50% {opacity: 1;}
+  90% {opacity: 1;}
+  100% {opacity: 0; z-index: 1;}
+}
 
 .heading-section {
   margin: auto;
