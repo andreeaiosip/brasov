@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC|Libre+Baskerville|Merriweather|Nunito+Sans|Pridi|Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans|Righteous&display=swap');
 body, html{
     font-family:'Nunito Sans', sans-serif;
     margin: 0;
@@ -470,6 +470,52 @@ a.lightbox-close {
     vertical-align: top;
 }
 
+
+/* 
+=============================== 
+ATTRACTIONS Page
+=============================== 
+*/
+
+.attraction-1, .attraction-3 {
+  float:left;
+  width:50%;
+  padding:15px 20px 15px 15px;
+  margin-top: 7px;
+}
+.attraction-2, .attraction-4 {
+  float:left;
+  width:50%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+
+.attraction-1, .attraction-4 {
+  background-color: #d1cdc8;
+  border-radius: 10px;
+}
+
+
+
+.attractions-container {
+   
+  overflow:auto;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.attractions-container img {
+  width: 50%;
+  height: auto;
+} 
+.attractions-container>div>p {
+  padding: 10px;
+} 
+
+.attractions-container>div>h4 {
+  padding-top: 10px;
+}
 /* 
 =============================== 
 CONTACT Page
