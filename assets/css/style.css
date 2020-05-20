@@ -735,6 +735,8 @@ MEDIA QUERIES
   font-size: 8px;
 }
 
+
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -743,15 +745,20 @@ MEDIA QUERIES
     height: 100%;  
     object-fit: cover;  
 }
+video {
+  width: 100%;
+}  
+
+.lightbox-target:target img {
+    height: auto;
+    width: 90vw;
+   
+  }
 }
  
 @media only screen and (min-width: 600px) {
  
-  .lightbox-target:target img {
-    height: auto;
-    width: 60vw;
-   
-  }
+
   
  }
 
@@ -803,7 +810,7 @@ MEDIA QUERIES
 
   .lightbox-target:target img {
     height: auto;
-    width: 60vw;
+    width: 80vw;
   }
 }
 
