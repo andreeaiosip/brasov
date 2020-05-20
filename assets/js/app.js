@@ -85,7 +85,7 @@ function getLocation() {
     }
 };
 
-getLocation();
+// getLocation();
 
 
 // First name field must be filled validation
